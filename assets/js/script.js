@@ -11,7 +11,7 @@ $(document).ready(() => {
 var gloablcity = "";
 const getCurrentWeather = city => {
     $.ajax({
-        url: `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=Imperial&appid=2f8fb68d8a7d1a7c67cfaf83eb3b36dc`,
+        url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=Imperial&appid=2f8fb68d8a7d1a7c67cfaf83eb3b36dc`,
         type: "GET",
         dataType: "json",
         success: data => {
@@ -77,7 +77,7 @@ const showData = data => {
     for(let i=1; i<6; i++) {
         tmp = `<li>
                     <div class="date">${moment(data.daily[i].dt * 1000).calendar(true)}</div>
-                    <div class="img"><img src="http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png"></div>
+                    <div class="img"><img src="https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png"></div>
                     <div class="temp">Temp: <span>${data.daily[i].temp.day}</span> °F</div>
                     <div class="hue">Humidity: <span>${data.daily[i].humidity}</span>%</div>
                 </li>`;
