@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+button:focus, button:active, input:focus, input:active {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.title {
+  background-color: #222222;
+  color: #fff;
+  margin: 20px 20px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+.container > .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .container > .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+  }
+}
+.container > .row > .l-col {
+  flex: 0 0 30%;
+  padding: 20px;
+  background-color: #f3f3f3;
+  min-height: 80vh;
+}
+@media screen and (max-width: 768px) {
+  .container > .row > .l-col {
+    min-height: auto;
+  }
+}
+.container > .row > .l-col > * {
+  margin: 10px 0;
+}
+.container > .row > .l-col label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.container > .row > .l-col form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container > .row > .l-col form input[type=text] {
+  width: 70%;
+  height: 33px;
+  padding: 5px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border: 1px solid #777777;
+  border-radius: 5px 0 0 5px;
+}
+.container > .row > .l-col form button {
+  width: 50px;
+  height: 45px;
+  padding: 5px;
+  background-color: #0a008a;
+  border: 2px solid #0c4ecd;
+  border-radius: 0 5px 5px 0;
+}
+.container > .row > .l-col form button .icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.container > .row > .l-col form button .icon svg {
+  color: #fff;
+}
+.container > .row > .l-col .history ul.history-list {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.container > .row > .l-col .history ul.history-list li {
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.container > .row > .l-col .history ul.history-list li:hover {
+  cursor: pointer;
+}
+.container > .row > .l-col .history ul.history-list li:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.container > .row > .l-col .history ul.history-list li:last-child {
+  border-bottom: none;
+  border-radius: 0 5px 5px 0;
+}
+.container > .row > .r-col {
+  display: none;
+  flex: 0 0 68%;
+}
+.container > .row > .r-col .current-info {
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #777777;
+  border-radius: 5px;
+  width: 85%;
+}
+.container > .row > .r-col .current-info > * {
+  margin: 10px 0;
+}
+.container > .row > .r-col .current-info #uv span {
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+.container > .row > .r-col .current-info #uv span.low {
+  background-color: green;
+}
+.container > .row > .r-col .current-info #uv span.moderate {
+  background-color: yellow;
+}
+.container > .row > .r-col .current-info #uv span.high {
+  background-color: orange;
+}
+.container > .row > .r-col .current-info #uv span.very-high {
+  background-color: red;
+}
+.container > .row > .r-col .current-info #uv span.extreme {
+  background-color: violet;
+}
+.container > .row > .r-col .current-info .current-city {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container > .row > .r-col .current-info .current-city span {
+  padding: 0 5px;
+}
+.container > .row > .r-col .forecast-info {
+  padding: 20px;
+}
+.container > .row > .r-col .forecast-info h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.container > .row > .r-col .forecast-info ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container > .row > .r-col .forecast-info ul li {
+  padding: 10px;
+  margin: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid #0c4ecd;
+  color: #fff;
+  background-color: #0c4ecd;
+}
+.container > .row > .r-col .forecast-info ul li > * {
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
